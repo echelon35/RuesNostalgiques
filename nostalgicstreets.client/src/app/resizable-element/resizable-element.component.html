@@ -1,0 +1,11 @@
+<div class="relative rounded-md">
+  <img class="absolute top-0 w-1/2 h-96 rounded-lg" src="{{this.new}}" />
+  <div class="container max-w-[50%] w-3/12 h-96" #container [style.width.px]="data.width">
+    <div class="h-full w-full rounded-lg" style="background: url({{this.original}}); background-size: cover; opacity: 0.8;"></div>
+    <div class="resize resize__right"
+         (resize)="onResize($event)"
+         [targetElement]="container"
+         [direction]="AngularResizeElementDirection.RIGHT">
+    </div>
+  </div>
+</div>

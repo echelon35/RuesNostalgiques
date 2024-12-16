@@ -1,0 +1,6 @@
+@NostalgicStreets.Server_HostAddress = http://localhost:5067
+
+GET {{NostalgicStreets.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
